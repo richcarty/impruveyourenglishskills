@@ -27,7 +27,6 @@
             backdrop-filter: blur(8px);
         }
 
-        /* LOGO ELEGANTE */
         .logo {
             text-align: center;
             margin-bottom: 30px;
@@ -60,7 +59,6 @@
             font-style: italic;
         }
 
-        /* SECCIÓN QUIÉNES APLICAN */
         .requisitos {
             background: rgba(255, 255, 255, 0.08);
             padding: 25px;
@@ -82,7 +80,6 @@
             line-height: 1.9;
         }
 
-        /* FORMULARIO */
         label {
             display: block;
             margin: 15px 0 6px;
@@ -108,3 +105,52 @@
             font-size: 20px;
             cursor: pointer;
             transition: 0.3s;
+        }
+
+        button:hover {
+            background: #0f5ec7;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="logo">
+            <div class="logo-box">
+                <h1>DRD <span>Conversation</span></h1>
+                <p>Take your English to the next level</p>
+            </div>
+        </div>
+
+        <div class="requisitos">
+            <h2>¿Es este programa para ti?</h2>
+            <ul>
+                <li>✔ Tienes conocimiento básico o intermedio de inglés</li>
+                <li>✔ Quieres mejorar fluidez, pronunciación y confianza</li>
+                <li>✔ Te interesa hablar inglés natural y real</li>
+                <li>✔ Buscas clases dinámicas enfocadas en conversación</li>
+            </ul>
+        </div>
+
+        <form action="https://formspree.io/f/xzzoyjwq" method="POST">
+            <label>Nombre completo:</label>
+            <input type="text" name="nombre" required>
+
+            <label>Correo electrónico:</label>
+            <input type="email" name="correo" required>
+
+            <label>¿Cuál es tu nivel de inglés?</label>
+            <input type="text" name="nivel" placeholder="Básico, intermedio, avanzado..." required>
+
+            <label>¿Cuál es tu meta con el inglés?</label>
+            <textarea name="meta" rows="4" required></textarea>
+
+            <button type="submit">Aplicar ahora</button>
+        </form>
+
+    </div>
+</body>
+</html>
+
+
